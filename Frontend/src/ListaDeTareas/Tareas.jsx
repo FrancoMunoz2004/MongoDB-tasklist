@@ -80,11 +80,16 @@ function Tareas() {
   //---------Eliminar una Tarea----------//
   const [DeleteTask, { data: msgDeleteTask }] = useDeleteTasksMutation();
 
+// create a new `Date` object
+let today = new Date();
+// get today's date in `MM/DD/YYYY` format
+let now = today.toLocaleDateString('en-US');
   const handleOnchangue = (e) => {
     setInputs({
       ...inputs,
       [e.target.name]: e.target.value,
       estado: false,
+      FechaRegistro:now,
     });
   };
   const handleSubmit = (e) => {

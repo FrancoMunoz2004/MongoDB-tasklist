@@ -71,7 +71,6 @@ export default function MostratTask({
                 <Card
                   maxW="sm"
                   key={i}
-                  
                   display="flex"
                   w="100%"
                   flexDirection={"column"}
@@ -87,7 +86,7 @@ export default function MostratTask({
                         src="https://img.freepik.com/psd-premium/icono-lista-tareas-bloc-notas-lista-tareas-completada-renderizado-3d-lapiz-psd-premium_471402-258.jpg?w=2000"
                         alt="Green double couch with wooden legs"
                         borderRadius="lg"
-                        boxSize="150px"
+                        boxSize="130px"
                       />
                     </Box>
                   </CardBody>
@@ -149,7 +148,7 @@ export default function MostratTask({
                         src="https://img.freepik.com/psd-premium/icono-lista-tareas-bloc-notas-lista-tareas-completada-renderizado-3d-lapiz-psd-premium_471402-258.jpg?w=2000"
                         alt="Green double couch with wooden legs"
                         borderRadius="lg"
-                        boxSize="150px"
+                        boxSize="130px"
                       />
                     </Box>
                   </CardBody>
@@ -179,6 +178,10 @@ export default function MostratTask({
                         Completada
                       </Text>
                     )}
+                  </Box>
+                  <Box>
+                    <Text fontWeight={"700"}>Creado en:</Text>
+                    <Text>{tasks.FechaRegistro}</Text>
                   </Box>
                   <Box display={"flex"} justifyContent="flex-end" gap="10px">
                     <Button
@@ -257,7 +260,7 @@ export default function MostratTask({
                         src="https://img.freepik.com/psd-premium/icono-lista-tareas-bloc-notas-lista-tareas-completada-renderizado-3d-lapiz-psd-premium_471402-258.jpg?w=2000"
                         alt="Green double couch with wooden legs"
                         borderRadius="lg"
-                        boxSize="150px"
+                        boxSize="130px"
                       />
                     </Box>
                   </CardBody>
@@ -287,6 +290,10 @@ export default function MostratTask({
                         Completada
                       </Text>
                     )}
+                  </Box>
+                  <Box>
+                    <Text fontWeight={"700"}>Creado en:</Text>
+                    <Text>{tasks.FechaRegistro}</Text>
                   </Box>
                   <Box display={"flex"} justifyContent="flex-end" gap="10px">
                     <Button

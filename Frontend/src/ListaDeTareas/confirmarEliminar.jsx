@@ -3,9 +3,10 @@ import React from 'react'
 
 export default function ConfirmarEliminar({isOpen, onClose, tasks, deleteTaks, indexConfirmEstado, updateEstado, onClick}) {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
+    <Modal isOpen={isOpen} onClose={onClose} isCentered>
+        <ModalOverlay  />
+        <ModalContent
+        >
           {indexConfirmEstado === 1 ?(<><ModalHeader>Editar estado de la tarea</ModalHeader>
           <ModalCloseButton />
           <ModalBody>

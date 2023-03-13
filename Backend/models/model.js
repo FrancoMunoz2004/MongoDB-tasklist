@@ -6,6 +6,8 @@ const taskSchema = new Schema({
   descripcion: String,
   estado: Boolean,
   _idUser: { type: Schema.ObjectId, ref: usuario },
-});
+  FechaRegistro: String,
+}
+);
 
 module.exports = mongoose.model("Tarea", taskSchema);
